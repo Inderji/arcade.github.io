@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arcade Game by Inderjeet</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!--sound effects-->
+	<audio id="scoreAudio">
+		<source src="Sound/Score.wav" type="audio/wav">
+	</audio>
+	<audio id="collision">
+		<source src="Sound/Collision.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="footStep">
+		<source src="Sound/FootStep.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="won">
+		<source src="Sound/Won.mp3" type="audio/mpeg">
+	</audio>
+	<!--container contain score-panel and game-panel-->
+	<div class="container">
+	 <section class="score-panel">
+        	<span id="score">0</span>			<!--Score Info-->
+			<span id="timer">00:00:00</span>	<!--Timer-->
+	 </section>
+	 <div class="game-panel">
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+	</div>
+	</div>
+	<div id="myModal" class="modal">
+
+  <!-- Popup after winning game-->
+  <div class="modal-content">
+	<h1>Congratulations!</h1>
+  <p id="para">You Won</p>
+    <h4><p id="scoreInfo">Some text in the Modal..</p></h4>
+	<h3>Keep It Up!</h3>
+	<button onclick="location.href='index.html'" type="button" class="button">
+     Play Again</button>
+  </div>
+
+</div>
+</body>
+</html>
